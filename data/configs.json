@@ -1,0 +1,22 @@
+{
+  "pull_requests": [
+    {
+      "id": "PR_001",
+      "branch": "fix/type-hints",
+      "files_changed": ["logic.py"],
+      "expected_behavior": "Mypy should pass without type errors",
+      "target_files": {
+        "logic.py": "passes_mypy"
+      }
+    },
+    {
+      "id": "PR_002",
+      "branch": "feature/api-validation",
+      "files_changed": ["api.py", "test_api.py"],
+      "expected_behavior": "All 5 tests in test_api.py must pass",
+      "target_files": {
+        "test_api.py": "5_passed"
+      }
+    }
+  ]
+}
