@@ -1,0 +1,8 @@
+faiss-cpu==1.7.4
+sentence-transformers==2.2.2
+matplotlib==3.7.1
+pytest==7.4.0
+mypy==1.4.1
+pylint==2.17.4
+pyyaml==6.0.1
+numpy==1.24.3
