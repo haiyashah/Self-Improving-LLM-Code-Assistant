@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ReviewPlan",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "step_id": {
+        "type": "integer",
+        "description": "The sequential ID of the verification step."
+      },
+      "intent": {
+        "type": "string",
+        "description": "A clear description of what this step is trying to verify (e.g., 'Check for null pointer in user_auth.py')."
+      },
+      "files": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "List of source or test files involved in this step."
+      },
+      "tools": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["pytest", "mypy", "pylint", "coverage"]
+        },
+        "description": "The specific toolset required for this step."
+      },
+      "expected_signal": {
+        "type": "string",
+        "description": "The specific string or regex pattern the Verifier should look for in the tool output to confirm success."
+      }
+    },
+    "required": ["step_id", "intent", "files", "tools", "expected_signal"]
+  }
+}
