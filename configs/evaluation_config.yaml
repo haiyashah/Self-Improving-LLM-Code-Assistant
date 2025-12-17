@@ -1,0 +1,10 @@
+evaluation_parameters:
+  target_precision: 0.85
+  max_false_positive_rate: 0.10
+  min_coverage_required: 80.0
+
+batch_testing:
+  parallel_workers: 2
+  data_split: "sample_prs"
+  save_plots: true
+  output_dir: "./results/metrics/"
