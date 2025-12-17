@@ -88,7 +88,7 @@ A modular framework for automatically reviewing, executing, and improving code c
 
 ```
 
-#Features
+## Features
 
 - **Planner:** Generates structured step-by-step plans from PR diffs.
 - **Executor:** Runs tests, static analysis, and tools programmatically.
