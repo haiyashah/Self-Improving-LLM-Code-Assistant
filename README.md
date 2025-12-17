@@ -56,7 +56,7 @@ A modular framework for automatically reviewing, executing, and improving code c
 ## Project Structure
 
 ```text
-.
+
 ├── planner/                # LLM planning module
 │   ├── plan_generator.py   # Generates structured review plans from PR diff
 │   ├── plan_schema.json    # Defines JSON schema for structured plans
@@ -85,6 +85,9 @@ A modular framework for automatically reviewing, executing, and improving code c
 │   ├── agent_config.yaml   # LLM temperature, max tokens, tools allowed
 │   └── evaluation_config.yaml # Metrics and evaluation settings
 └── README.md               # Project overview
+
+```
+
 #Features
 
 - **Planner:** Generates structured step-by-step plans from PR diffs.
