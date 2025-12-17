@@ -47,8 +47,12 @@ Large engineering teams spend thousands of hours on code reviews. This agent:
 | Avg. Review Steps          | 11.2     | 6.4            |
 
 ---
+# Self-Improving LLM Code Assistant
+
+A modular framework for automatically reviewing, executing, and improving code changes using LLMs. The system plans steps, executes tests, verifies results, stores past lessons, and evaluates performance over time.
 
 ## Project Structure
+
 self-improving-llm-code-assistant/
 ├── planner/       # LLM planning module
 │   ├── plan_generator.py       # Generates structured review plans from PR diff
@@ -85,6 +89,21 @@ self-improving-llm-code-assistant/
 │   └── evaluation_config.yaml    # Metrics and evaluation settings
 │
 └── README.md      # Project overview
+
+## Features
+
+- **Planner:** Generates structured step-by-step plans from PR diffs.
+- **Executor:** Runs tests, static analysis, and tools programmatically.
+- **Verifier:** Checks outputs and assertions for each plan step.
+- **Memory:** Stores past failures and improvements for future guidance.
+- **Evaluation:** Tracks metrics, generates plots, and supports ablation studies.
+
+## Usage
+
+1. Configure LLM and evaluation settings in `configs/`.
+2. Provide sample PRs in `data/sample_prs/`.
+3. Run the planner → executor → verifier pipeline.
+4. Evaluate agent performance via `evaluation/evaluate_agent.py`.
 
 
 ---
