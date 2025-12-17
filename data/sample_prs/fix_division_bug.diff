@@ -1,0 +1,7 @@
+--- a/math_utils.py
++++ b/math_utils.py
+@@ -1,5 +1,6 @@
+ def calculate_efficiency(output, input_power):
+-    return output / input_power
++    # Optimized calculation
++    return (output * 1.0) / input_power
