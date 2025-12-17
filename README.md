@@ -53,41 +53,41 @@ A modular framework for automatically reviewing, executing, and improving code c
 
 ## Project Structure
 
-├── planner/ # LLM planning module
-│ ├── plan_generator.py # Generates structured review plans from PR diff
-│ ├── plan_schema.json # Defines JSON schema for structured plans
-│ └── prompts/ # Optional prompt templates for LLM planning
-│
-├── executor/ # Code execution and test runner
-│ ├── run_tests.py # Runs pytest, coverage.py for each step
-│ ├── static_analysis.py # Runs pylint, mypy checks
-│ └── tool_interface.py # Wrapper for calling tools programmatically
-│
-├── verifier/ # Verification of plan steps
-│ ├── verify_results.py # Checks if step outputs match expected results
-│ ├── assertion_checks.py # Encodes deterministic checks per step
-│ └── verification_utils.py # Helpers for logging and reporting verification
-│
-├── memory/ # Stores past failures and corrections
-│ ├── memory_db.py # FAISS vector DB interface
-│ ├── embeddings.py # Embeddings of failed steps / lessons
-│ └── memory_utils.py # Query/update memory for future plans
-│
-├── evaluation/ # Metrics and analysis scripts
-│ ├── evaluate_agent.py # Calculates precision, false positives, steps
-│ ├── plot_metrics.py # Generates plots of improvement over time
-│ └── ablation_studies.py # Optional ablation experiments
-│
-├── data/ # Sample pull requests and test data
-│ ├── sample_prs/ # Directory of Python PR diffs
-│ ├── tests/ # Unit tests for PRs
-│ └── configs.json # Mapping PRs to expected outputs
-│
-├── configs/ # Configuration files
-│ ├── agent_config.yaml # LLM temperature, max tokens, tools allowed
-│ └── evaluation_config.yaml # Metrics and evaluation settings
-│
-└── README.md # Project overview
+planner/ # LLM planning module
+      plan_generator.py # Generates structured review plans from PR diff
+      plan_schema.json # Defines JSON schema for structured plans
+      prompts/ # Optional prompt templates for LLM planning
+
+executor/              # Code execution and test runner
+    run_tests.py       # Runs pytest, coverage.py for each step
+    static_analysis.py # Runs pylint, mypy checks
+    tool_interface.py  # Wrapper for calling tools programmatically
+
+verifier/              # Verification of plan steps
+    verify_results.py      # Checks if step outputs match expected results
+    assertion_checks.py    # Encodes deterministic checks per step
+    verification_utils.py  # Helpers for logging and reporting verification
+
+memory/                # Stores past failures and corrections
+    memory_db.py       # FAISS vector DB interface
+    embeddings.py      # Embeddings of failed steps / lessons
+    memory_utils.py    # Query/update memory for future plans
+
+evaluation/            # Metrics and analysis scripts
+    evaluate_agent.py      # Calculates precision, false positives, steps
+    plot_metrics.py        # Generates plots of improvement over time
+    ablation_studies.py    # Optional ablation experiments
+
+data/                  # Sample pull requests and test data
+    sample_prs/        # Directory of Python PR diffs
+    tests/             # Unit tests for PRs
+    configs.json       # Mapping PRs to expected outputs
+
+configs/               # Configuration files
+    agent_config.yaml      # LLM temperature, max tokens, tools allowed
+    evaluation_config.yaml # Metrics and evaluation settings
+
+README.md              # Project overview
 
 #Features
 
