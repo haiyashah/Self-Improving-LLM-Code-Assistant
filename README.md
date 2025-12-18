@@ -1,7 +1,7 @@
 # Self-Improving LLM Code Assistant 🚀
 
 ## Project Goal
-Build an AI agent that **reviews Python code, detects logical errors, and improves its reasoning over time** using verification and memory — designed as a **real-world developer assistant**.
+Build an AI agent that **reviews Python code, detects logical errors, and improves its reasoning over time** using verification and memory, designed as a **real-world developer assistant**.
 
 ---
 
