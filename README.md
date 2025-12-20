@@ -76,7 +76,7 @@ A modular framework for automatically reviewing, executing, and improving code c
 ├── evaluation/             # Metrics and analysis scripts
 │   ├── evaluate_agent.py   # Calculates precision, false positives, steps
 │   ├── plot_metrics.py     # Generates plots of improvement over time
-│   └── ablation_studies.py # Optional ablation experiments
+│   └── ablation_studies.py # Optional ablation experiments (I have added it)
 ├── data/                   # Sample pull requests and test data
 │   ├── sample_prs/         # Directory of Python PR diffs
 │   ├── tests/              # Unit tests for PRs
