@@ -53,8 +53,6 @@ A modular framework for automatically reviewing, executing, and improving code c
 
 ## Project Structure
 
-## Project Structure
-
 ```text
 
 ├── planner/                # LLM planning module
@@ -102,7 +100,6 @@ A modular framework for automatically reviewing, executing, and improving code c
 2. Provide sample PRs in `data/sample_prs/`.
 3. Run the planner → executor → verifier pipeline.
 4. Evaluate agent performance via `evaluation/evaluate_agent.py`.
-
 
 ---
 
