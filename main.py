@@ -5,7 +5,6 @@ from verifier.verify_results import Verifier
 from memory.memory_db import ReasoningMemory
 from memory.embeddings import embed_text
 
-# Setup logging for a "tangible" console output
 logging.basicConfig(level=logging.INFO, format='%(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("CodeAssistant")
 
